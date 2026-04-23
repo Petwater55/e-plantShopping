@@ -254,7 +254,7 @@ function ProductList({ onHomeClick }) {
         setShowCart(false);
     };
     const handleAddToCart = (product) => {
-        dispatchEvent(addItem(product)); // Dispatch the action to add the product to the cart (Redux action)
+        dispatch(addItem(product)); // Dispatch the action to add the product to the cart (Redux action)
 
         setAddedToCart((prevState) => ({ // Update the local state to reflect that the product has been added
         ...prevState, // Spread the previous state to retain existing entries
@@ -288,7 +288,7 @@ function ProductList({ onHomeClick }) {
                    <h1>
                     <div>{category.category}</div> {/* Display the category name */}
                    </h1>
-                   <div className= "productList"> {/* Container for the list of plant cards */} 
+                   <div className="product-List"> {/* Container for the list of plant cards */} 
                    {category.plants.map((plant, plantIndex) => ( // Loop through each plant in the current category
                     <div className="product-card" key={plantIndex}> {/* Unique key for each plant card */}
                     <img
