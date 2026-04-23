@@ -1,1 +1,1 @@
-# coding-project-template
+e-plantShopping web application host a place to buy all plant products and plant accesories.
